@@ -34,10 +34,6 @@ export default function configReducer(state = initialState, action) {
       // The request failed. It's done. So set loading to "false".
       // Save the error, so we can display it somewhere.
       // Since it failed, we don't have items to display anymore, so set `items` empty.
-      //
-      // This is all up to you and your app though:
-      // maybe you want to keep the items around!
-      // Do whatever seems right for your use case.
       return {
         ...state,
         loading: false,

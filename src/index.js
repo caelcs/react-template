@@ -5,7 +5,7 @@ import App from './app/AppContainer';
 import * as serviceWorker from './serviceWorker';
 
 import { Provider } from 'react-redux';
-import configureStore from './app/config/store';
+import configureStore from './store';
 
 let configManagerStore = configureStore();
 
