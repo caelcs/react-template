@@ -1,7 +1,9 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
+import configReducer from "./reducers";
 
 const configStoreData = combineReducers({
+	configReducer
 });
 
 const configureStore = () => {

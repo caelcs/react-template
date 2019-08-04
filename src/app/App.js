@@ -2,9 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
+
+  componentDidMount() {
+    const { fetchConfiguration } = this.props;
+    console.log('componentDidMount')
+    fetchConfiguration();
+  }
+
+  render() {
+    return <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,7 +27,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  }
 }
 
 export default App;
