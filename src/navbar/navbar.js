@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
-import logo from "./logo.svg";
-import search from "./search.svg";
-import menu from "./menu.png";
-import arrow from "./right-arrow.svg";
-import close from "./close.svg";
+import logo from "./utils/logo.svg";
+import search from "./utils/search.svg";
+import menu from "./utils/menu.png";
+import arrow from "./utils/right-arrow.svg";
+import close from "./utils/close.svg";
 
 export default class Navbar extends React.Component {
   constructor(props) {
@@ -30,25 +31,27 @@ export default class Navbar extends React.Component {
     const { openMenu } = this.state;
     return (
       <div className="navbarContainer">
-        <img src={logo} alt="logo" className="navbarLogo" />
+        <Link to="/">
+          <img src={logo} alt="logo" className="navbarLogo" />
+        </Link>
         {openMenu ? (
           <div className="navbarSections">
-            <div className="navbarSection">
+            <Link className="navbarSection" to="/about">
               about us
               <img src={arrow} alt="arrow" className="arrow" />
-            </div>
-            <div className="navbarSection">
+            </Link>
+            <Link className="navbarSection" to="/products">
               products
               <img src={arrow} alt="arrow" className="arrow" />
-            </div>
-            <div className="navbarSection">
+            </Link>
+            <Link className="navbarSection" to="/support">
               support
               <img src={arrow} alt="arrow" className="arrow" />
-            </div>
-            <div className="navbarSection">
+            </Link>
+            <Link className="navbarSection" to="/contact">
               contact
               <img src={arrow} alt="arrow" className="arrow" />
-            </div>
+            </Link>
           </div>
         ) : null}
         <div className="navbarSearch">

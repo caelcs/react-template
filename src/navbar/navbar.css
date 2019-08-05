@@ -30,6 +30,7 @@
     line-height: 19px;
     margin-right: 55px;
     margin-bottom: 5px;
+    text-decoration: none;
     text-transform: uppercase;
   }
 
@@ -126,11 +127,12 @@
     font-size: 15px;
     font-weight: 500;
     align-items: center;
+    text-decoration: none;
     text-transform: uppercase;
     background-color: #6788ff;
     justify-content: space-between;
   }
-  
+
   .navbarSection:active {
     opacity: 0.5;
   }
