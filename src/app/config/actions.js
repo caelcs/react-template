@@ -18,11 +18,9 @@ export const fetchConfigFailure = error => ({
 
 export function fetchConfig() {
   return dispatch => {
-    fetch('config.json')
+    dispatch(fetchConfigBegin())
+    return fetch('config.json')
     .then(result => result.json())
-    .then(config => {
-      dispatch(fetchConfigSuccess(config));
-      return config;
-    })
-    .catch(error => dispatch(fetchConfigFailure(error)));
+    .then(config => dispatch(fetchConfigSuccess(config)))
+    .catch(error => dispatch(fetchConfigFailure(error)))
 }};

@@ -132,5 +132,11 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "expect": "^24.8.0",
+    "fetch-mock": "^7.3.9",
+    "node-fetch": "^2.6.0",
+    "redux-mock-store": "^1.5.3"
   }
 }
