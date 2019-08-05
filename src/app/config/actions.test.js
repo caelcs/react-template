@@ -19,7 +19,7 @@ describe('async actions to load config.json', () => {
 
     const expectedActions = [
       { type: actions.FETCH_CONFIG_BEGIN },
-      { type: actions.FETCH_CONFIG_SUCCESS, payload: { config: ['do something1'] } }
+      { type: actions.FETCH_CONFIG_SUCCESS, payload: { config: ['do something'] } }
     ]
 
     const store = mockStore({ config: [] })
@@ -28,4 +28,21 @@ describe('async actions to load config.json', () => {
         expect(store.getActions()).toEqual(expectedActions)
     })
   })
+
+  it('creates FETCH_CONFIG_FAILURE when fetching config Fails', () => {
+    fetchMock.getOnce('/config.json', 500)
+
+    const store = mockStore({ config: [] })
+
+    store.dispatch(actions.fetchConfig()).then(() => {
+      expect(findAction(store, actions.FETCH_CONFIG_BEGIN)).toEqual({type: actions.FETCH_CONFIG_BEGIN});
+      expect(findAction(store, actions.FETCH_CONFIG_FAILURE).type).toMatch(actions.FETCH_CONFIG_FAILURE);
+    }).catch((error) => {
+       console.log('error during the eval', error)
+    })
+  })
+
+  function findAction(store, type) {
+    return store.getActions().find(action => action.type === type);
+  }
 })
