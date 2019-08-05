@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import Navbar from "../navbar/navbar";
+import Navbar from "../products/components/navbar/navbar";
 
 class App extends React.Component {
   componentDidMount() {
