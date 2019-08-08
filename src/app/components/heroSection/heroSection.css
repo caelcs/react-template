@@ -6,7 +6,7 @@
   background-size: contain;
   background-color: black;
   background-repeat: no-repeat;
-  background-image: url("./utils/background-image.png");
+  background-image: url("./assets/background-image.png");
 }
 
 .heroTitle {

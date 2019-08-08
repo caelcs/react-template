@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-import Navbar from "../products/components/navbar/navbar";
-import HeroSection from "../products/components/heroSection/HeroSection";
+import Navbar from "./components/navbar/navbar";
+import HeroSection from "./components/heroSection/heroSection";
+import HomeCategories from "./components/homeCategories/homeCategories";
 class App extends React.Component {
   componentDidMount() {
     const { fetchConfiguration } = this.props;
-    console.log("componentDidMount");
     fetchConfiguration();
   }
 
@@ -15,6 +15,7 @@ class App extends React.Component {
       <div className="App">
         <Navbar />
         <HeroSection />
+        <HomeCategories />
       </div>
     );
   }

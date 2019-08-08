@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 import "./navbar.css";
 
-import logo from "./utils/logo.svg";
-import menu from "./utils/menu.png";
-import close from "./utils/close.svg";
-import search from "./utils/search.svg";
-import arrow from "./utils/right-arrow.svg";
+import logo from "./assets/logo.svg";
+import menu from "./assets/menu.png";
+import close from "./assets/close.svg";
+import search from "./assets/search.svg";
+import arrow from "./assets/right-arrow.svg";
 
 export default class Navbar extends React.Component {
   constructor(props) {
