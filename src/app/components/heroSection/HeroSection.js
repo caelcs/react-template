@@ -9,7 +9,7 @@ export default class HeroSection extends React.Component {
         {window.innerWidth < 768 ? (
           <div>
             <img
-              src={require("./utils/background-image-mobile.jpg")}
+              src={require("./assets/background-image-mobile.jpg")}
               className="heroContainer"
               alt=""
             />

@@ -6,10 +6,10 @@
     height: 618px;
     margin-top: 90px;
     position: relative;
-    background-size: 100% 100%;
+    background-size: contain;
     background-color: black;
     background-repeat: no-repeat;
-    background-image: url("./utils/background-image.jpg");
+    background-image: url("./assets/background-image.png");
   }
 
   .heroTitle {
@@ -81,6 +81,6 @@
     justify-content: center;
     color: #ffffff;
     margin-left: 24px;
-    margin-top: 10px
+    margin-top: 10px;
   }
 }

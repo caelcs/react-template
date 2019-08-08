@@ -2,12 +2,12 @@ import React from "react";
 import "./App.css";
 
 import Navbar from "./components/navbar/navbar";
-import HeroSection from "./components/heroSection/HeroSection";
 import Footer from "./components/footer/footer";
+import HeroSection from "./components/heroSection/heroSection";
+import HomeCategories from "./components/homeCategories/homeCategories";
 class App extends React.Component {
   componentDidMount() {
     const { fetchConfiguration } = this.props;
-    console.log("componentDidMount");
     fetchConfiguration();
   }
 
@@ -16,6 +16,7 @@ class App extends React.Component {
       <div className="App">
         <Navbar />
         <HeroSection />
+        <HomeCategories />
         <Footer />
       </div>
     );

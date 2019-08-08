@@ -1,0 +1,56 @@
+.categoriesContainer {
+  width: 100%;
+  background: #6788ff14;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.categoriesContent {
+  display: grid;
+  width: 82%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 27px;
+}
+.categoryCard {
+  width: 384px;
+  height: 384px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(63, 105, 255, 0.08);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.categoryCard a {
+  text-decoration: none;
+}
+
+.categoryTitle {
+  font-size: 31px;
+  line-height: 41px;
+  color: #1e1e28;
+  width: 60%;
+  text-align: start;
+  margin-top: 38px;
+  margin-left: 33px;
+}
+
+.categoryLink {
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6788ff;
+  margin-left: 33px;
+  margin-top: 8px;
+  outline: none;
+}
+
+.categoryImage {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
