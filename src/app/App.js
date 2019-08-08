@@ -7,7 +7,6 @@ import HomeCategories from "./components/homeCategories/homeCategories";
 class App extends React.Component {
   componentDidMount() {
     const { fetchConfiguration } = this.props;
-    console.log("componentDidMount");
     fetchConfiguration();
   }
 
