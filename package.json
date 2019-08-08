@@ -7,6 +7,7 @@
     "@svgr/webpack": "4.1.0",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
+    "axios": "^0.19.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "^24.8.0",
     "babel-loader": "8.0.5",
@@ -67,7 +68,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "format": "prettier --write src/**/*.{js,jsx,css}"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -138,6 +140,7 @@
     "expect": "^24.8.0",
     "fetch-mock": "^7.3.9",
     "node-fetch": "^2.6.0",
+    "prettier": "^1.18.2",
     "redux-mock-store": "^1.5.3"
   }
 }
