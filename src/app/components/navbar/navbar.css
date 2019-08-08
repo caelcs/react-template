@@ -15,12 +15,7 @@
     justify-content: space-between;
   }
 
-  .navbarSections {
-    display: flex;
-    margin-right: 35px;
-    align-content: center;
-    justify-content: space-around;
-  }
+
 
   .navbarSection {
     cursor: pointer;
@@ -73,7 +68,7 @@
     cursor: pointer;
     margin-left: 119px;
     margin-bottom: 3px;
-    margin-right: 155px;
+    margin-right: 100px;
   }
 
   .search {
@@ -107,7 +102,7 @@
     width: 100%;
     z-index: 50;
     height: 60px;
-    position: fixed;
+    position: static;
     background-color: white;
   }
 

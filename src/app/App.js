@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 
 import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 import HeroSection from "./components/heroSection/heroSection";
 import HomeCategories from "./components/homeCategories/homeCategories";
 class App extends React.Component {
@@ -16,6 +17,7 @@ class App extends React.Component {
         <Navbar />
         <HeroSection />
         <HomeCategories />
+        <Footer />
       </div>
     );
   }

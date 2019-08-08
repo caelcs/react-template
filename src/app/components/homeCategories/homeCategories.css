@@ -7,7 +7,7 @@
 
 .categoriesContent {
   display: grid;
-  width: 85%;
+  width: 82%;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 27px;
@@ -19,6 +19,7 @@
   background: #ffffff;
   box-shadow: 0px 0px 30px rgba(63, 105, 255, 0.08);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .categoryCard a {
