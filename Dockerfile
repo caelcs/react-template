@@ -19,6 +19,6 @@ RUN npm config set maxsockets 5 && npm config set progress false
 # Install pm2
 RUN npm install -g pm2
 # Actual script to start can be overridden from `docker run`
-CMD ["pm2", "serve", "build", "--port 5000", "--no-daemon"]
+CMD ["pm2", "serve", "--no-daemon", ".", "5000"]
 # Expose ports
 EXPOSE 5000

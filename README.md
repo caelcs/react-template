@@ -37,14 +37,32 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### `Running the application using PM2`
+### Running the application using PM2
 By using PM2 as process manager you can have your app up and ready by executing:
-```npm install -g pm2```
-```npm run build```
-```pm2 serve build --name test-boilerplate```
-```open http://localhost:8080```
+```
+npm install -g pm2
+```
+```
+npm run build
+```
+```
+pm2 serve build --name test-boilerplate
+```
+```
+open http://localhost:8080
+```
 
+### Generate docker image
 
+To build the image use
+```
+docker build -t adolfoecs/test-boilerplate:latest .
+```
+
+To run the image:
+```
+docker run -p 5000:5000 -d adolfoecs/test-boilerplate:latest
+```
 
 ## Learn More
 
