@@ -33,7 +33,7 @@ export default class Navbar extends React.Component {
   }
   handleSearch(e) {
     e.preventDefault();
-    this.setState(({ openSearch }) => ({ openSearch: !openSearch }));
+    this.setState(({ openSearch, openMenu }) => ({ openSearch: !openSearch, openMenu: false }));
   }
   handleMenu(e) {
     e.preventDefault();
